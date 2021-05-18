@@ -23,7 +23,6 @@ const CatalogFlow = () => {
         <Stack.Navigator>
             <Stack.Screen name="CatalogScreen" component={CatalogScreen}/>
             <Stack.Screen name="ContactScreen" component={ContactScreen}/>
-
         </Stack.Navigator>
     )
 }
@@ -31,8 +30,8 @@ const CatalogFlow = () => {
 export const AppNavigation = () => {
     return (
         <Tab.Navigator>
-            <Tab.Screen name="Главный" component={MainFlow} />
-            <Tab.Screen name="Каталог" component={CatalogFlow} />
+            <Tab.Screen name="MainScreen" component={MainFlow} />
+            <Tab.Screen name="Catalog" component={CatalogFlow} />
         </Tab.Navigator>
     )
 }
