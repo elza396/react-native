@@ -22,7 +22,7 @@ const CatalogFlow = () => {
     return (
         <Stack.Navigator>
             <Stack.Screen name="CatalogScreen" component={CatalogScreen}/>
-            <Stack.Screen name="ContactScreen" component={ContaKctScreen}/>
+            <Stack.Screen name="ContactScreen" component={ContactScreen}/>
 
         </Stack.Navigator>
     )
