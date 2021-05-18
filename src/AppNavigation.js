@@ -4,6 +4,7 @@ import {MainScreen} from './screens/MainScreen';
 import {createStackNavigator} from '@react-navigation/stack';
 import {CatalogScreen} from './screens/CatalogScreen';
 import {AboutAppScreen} from './screens/AboutAppScreen';
+import {ContactScreen} from './screens/ContactScreen';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -21,6 +22,7 @@ const CatalogFlow = () => {
     return (
         <Stack.Navigator>
             <Stack.Screen name="CatalogScreen" component={CatalogScreen}/>
+            <Stack.Screen name="ContactScreen" component={ContaKctScreen}/>
 
         </Stack.Navigator>
     )

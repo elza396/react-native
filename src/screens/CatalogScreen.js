@@ -23,7 +23,12 @@ export const CatalogScreen = (props) => {
         <View>
             {contacts.map(contact => {
                 return(
-                    <TouchableOpacity key={contact._id}>
+                    <TouchableOpacity
+                        key={contact._id}
+                        onPress={() => {
+                            navigation.navigate('ContactScreen', {data: contact});
+                        }}
+                    >
                         <Text>{contact.name + ' ' + contact.surname}</Text>
                     </TouchableOpacity>
                 )
